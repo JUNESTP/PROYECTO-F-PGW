@@ -94,6 +94,10 @@ header nav a:hover{
     float: left;
     width: 50%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .container{

@@ -17,7 +17,7 @@
         </div>
         <nav>
             <a href="/pages/menu.html">MENU</a>
-            <a href="#ofertas">OFERTAS</a>
+            <a href="#ofertas" onclick="scrollToSection('ofertas')">OFERTAS</a>
             <a href="/pages/aboutus.html">SOBRE NOSOTROS</a>
         </nav>
         <div class="localizador">
@@ -61,5 +61,15 @@
             <p>Copyright &copy;2024. designed by <span>JUN</span></p>
         </div>
     </footer>
+<script>
+    function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    var offsetTop = section.offsetTop;
+
+    window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth' // Desplazamiento suave
+    });
+}</script>
 </body>
 </html>

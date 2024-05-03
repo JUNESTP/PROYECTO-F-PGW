@@ -49,6 +49,10 @@ header{
     border-radius: 3rem;
 }
 
+.content-banner a:hover{
+    background-color: rgb(224, 165, 107);
+}
+
 .logo {
     width: 30%;
     height: 100%;

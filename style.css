@@ -48,6 +48,7 @@ header nav a:hover{
     width: 100%;
     display: inline-block;
     align-content: space-between;
+    background-color: #f5f5dc;
 }
 
 .info1{
@@ -108,4 +109,65 @@ header nav a:hover{
     80%{transform: translateX(-300%)}
     90%{transform: translateX(0%)}
     100%{transform: translateX(0%)}
+}
+
+footer{
+    background-color: #8f653c;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #c2a476;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #c2a476;
+}
+
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #f5f5dc;
+}
+
+.footer-bottom{
+    background-color: #654321;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-botoom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }

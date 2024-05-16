@@ -7,8 +7,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin: 25px 5px;
+    padding: 0 15px;
+    margin: 0;
 }
 
 .banner{
@@ -64,15 +64,32 @@ header{
 }
 
 header nav a{
+    font-size: larger;
     color:#c2a476;
     text-decoration: none;
     display: inline-block;
-    padding: 5px 10px;
-    transition: .5s;
+    margin: 0 30px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+header nav a::before{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #654321;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    transition: all .5s;
 }
 
 header nav a:hover{
     color: #654321;
+}
+
+header nav a:hover::before{
+    width: 100%;
 }
 
 .localizador a{
@@ -95,17 +112,20 @@ header nav a:hover{
 
 .info1{
     color:#c2a476;
-    float: left;
+    float: center;
     width: 50%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 5em;
+    padding-left: 23vw;
+    z-index: -1;
 }
 
 .container{
-    float: right;
+    float: center;
+    z-index: 1;
 }
 
 .container .wrapper{
